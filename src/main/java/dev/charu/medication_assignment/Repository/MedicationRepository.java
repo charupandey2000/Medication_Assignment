@@ -13,7 +13,7 @@ public class MedicationRepository {
     public ResultSet get_Data() throws ClassNotFoundException, SQLException {
      Class.forName("com.mysql.cj.jdbc.Driver");
      Connection connection=DriverManager.getConnection(
-             "jdbc:mysql://localhost:3306/Medication","root","Asha@1975");
+             "jdbc:mysql://localhost:3306/Medication","root","");
 
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT \n" +
